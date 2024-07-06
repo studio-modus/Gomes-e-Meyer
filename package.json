@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "dotenv": "^16.0.3",
+    "glob-parent": "^6.0.2",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
+}
