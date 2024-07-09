@@ -17,4 +17,14 @@ $theme_uri = get_template_directory_uri();
 
 <body <?php body_class(); ?>>
 
-  
+
+  <header>
+    <nav>
+      <a href="">
+        <img src="<?php get_template_directory_uri() ?>/assets/img/Logo Escritorio de Advocacia.png" alt="">
+      </a>
+      <ul>
+
+      </ul>
+    </nav>
+  </header>
