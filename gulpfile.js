@@ -6,6 +6,7 @@ import * as sasslib from 'sass';
 import autoprefixer from 'gulp-autoprefixer';
 import browserSynclib from 'browser-sync';
 
+
 const browserSync = browserSynclib.create();
 const sass = gulpsass(sasslib);
 
@@ -13,15 +14,17 @@ dotenv.config({
   path: '.env.development'
 });
 
-const __dirname = import.meta.url;
+const __dirname = import.meta.dirname;
 
 function compilaSass() {
   return gulp
     .src('assets/css/**/*.scss')
-    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-    .pipe(autoprefixer({
-      cascade: false,
-    }))
+    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(
+      autoprefixer({
+        cascade: false,
+      })
+    )
     .pipe(gulp.dest(path.join(__dirname, 'assets', 'css')))
     .pipe(browserSync.stream());
 }
@@ -43,8 +46,13 @@ function browser() {
 gulp.task('browser-sync', browser);
 
 function watch() {
-  gulp.watch('assets/css/**/*.scss', compilaSass);
-  gulp.watch(['**/*.php', '*.html', '**/*.js', 'assets/css/*.css']).on('change', browserSync.reload);
+  compilaSass();
+  gulp
+    .watch('assets/css/**/*.scss')
+    .on('change', gulp.parallel('sass'));
+  gulp
+    .watch(['**/*.php', '*.html', '**/*.js', 'assets/css/*.css'])
+    .on('change', browserSync.reload);
 }
 
 gulp.task('watch', watch);

@@ -4,15 +4,83 @@
   box-sizing: border-box;
 }
 
-.cirka {
-  font-family: "Cirka", sans-serif ;
+
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000000;
+
+  svg{
+    animation: pulse 8s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+}
+.absolute{
+
 }
 
-.gotham {
-  font-family: "Gotham", sans-serif;
+
+.btn-sec{
+  padding: 9px 20px;
+  border:3px solid #E6E0E6;
+  color: #E6E0E6;
+  transition: .4s;
+  &:hover{
+    background-color: #0C366A;
+  }
 }
+.txt-principal{
+    color: #E6E0E6;
 
+  text-shadow: 45px -47px 13.2px rgba(0, 0, 0, 0.25);
+  font-family: "Cirka";
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  span{
+    color: #fff;
+  }
+}
+.gotham{
+  font-family: "Gotham";
+  font-size: 18px;
+font-style: normal;
+line-height: 26px; /* 144.444% */
+letter-spacing: -0.1px;
+}
+.bold{
+  font-weight: 700;
+}
+.bd-sm{
+  border-radius: 8px;
+}
+.btn-pri{
 
+  padding: 12px 20px;
+  background-color: #0C233F;
+  color: #E6E0E6;
+  transition: .4s;
+  &:hover{
+    background-color: #0C366A;
+  }
+}
 // pag 404
 .erro{
   text-align: center;
@@ -35,18 +103,22 @@ ul {
 
 
 body {
-  display: none;
+  position: relative;
+  background-color: #F4FCFF;
   font-family: "Cirka", sans-serif ;
 }
-
+.p-80{
+  padding:0 80px;
+}
 .container {
+
   // border: 1px solid red;
   max-width: 1620px;
   margin: 0 auto;
 }
 
 
-.sessao {
+.secao {
   padding: 120px 0;
 }
 
