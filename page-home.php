@@ -49,11 +49,11 @@
 
   </a>
 </div>
-<div class="cards_hero ">
-  <ul class="cards container pd-80">
+<div class="cards_hero p-80">
+  <ul class="cards container">
     <li>
       <a href="" class="card bd-sm">
-        <img  src="<?php echo get_template_directory_uri() ?>/assets/img/gavel_24dp_BD9C61.svg" alt="" srcset="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gavel_24dp_BD9C61.svg" alt="" srcset="">
         <div class="card-txt">
           <h2>
             Contratos Comerciais
@@ -68,7 +68,7 @@
     <!-- 2 -->
     <li>
       <a href="" class="card bd-sm">
-        <img  src="<?php echo get_template_directory_uri() ?>/assets/img/gavel_24dp_BD9C61.svg" alt="" srcset="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gavel_24dp_BD9C61.svg" alt="" srcset="">
         <div class="card-txt">
           <h2>
             Contratos Comerciais
@@ -83,7 +83,7 @@
     <!-- 3 -->
     <li>
       <a href="" class="card bd-sm">
-        <img  src="<?php echo get_template_directory_uri() ?>/assets/img/gavel_24dp_BD9C61.svg" alt="" srcset="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gavel_24dp_BD9C61.svg" alt="" srcset="">
         <div class="card-txt">
           <h2>
             Contratos Comerciais
@@ -98,7 +98,7 @@
     <!-- 4 -->
     <li>
       <a href="" class="card bd-sm">
-        <img  src="<?php echo get_template_directory_uri() ?>/assets/img/gavel_24dp_BD9C61.svg" alt="" srcset="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gavel_24dp_BD9C61.svg" alt="" srcset="">
         <div class="card-txt">
           <h2>
             Contratos Comerciais
@@ -112,7 +112,282 @@
     </li>
   </ul>
 
-
 </div>
+
+<section class="sobre secao grid-3 container">
+
+  <div class="sobre-bloco left">
+    <span class="start">
+      Sobre Nós
+    </span>
+    <h2 class="start">
+      Nosso objetivo é oferecer soluções jurídicas eficientes que realmente façam a diferença.
+    </h2>
+    <hr>
+    <p class="start">
+      Somos uma equipe de advogados dedicados a fornecer serviços de alta qualidade. Valorizamos transparência, compromisso e excelência em tudo o que fazemos.
+    </p>
+    <a href="" class="btn-pri bd-sm gotham bold">
+      Áreas de Atuação
+    </a>
+  </div>
+  <!-- img -->
+  <div class="sobre-bloco">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sobre-bg.png" alt="">
+  </div>
+  <!--  -->
+  <div class="sobre-bloco right">
+    <span class="end">
+      Por Que Nos Escolher
+    </span>
+    <h2 class="end">
+      Trabalhamos para garantir sua satisfação e confiança.
+    </h2>
+    <hr>
+    <p class="end">
+      Nos destacamos pelo cuidado em entender e atender às necessidades específicas de cada cliente, sempre buscando a excelência em nossos serviços jurídicos.
+    </p>
+
+  </div>
+</section>
+
+<section class="areas-atuacao container p-80">
+  <div class="titulo">
+    <h2>
+      Áreas de Atuação.
+    </h2>
+    <hr>
+  </div>
+  <ul class="cards-atuacao grid-4">
+    <li>
+      <a href="" class="card-atuacao bd-sm">
+        <img class="icon" src="<?= get_template_directory_uri(); ?>/assets/img/apartment_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h2>
+          Empresarial
+        </h2>
+        <p>
+          A Jornada Rumo ao Sucesso
+          Empresarial Começa Aqui.
+        </p>
+        <img class="arrow" src="<?= get_template_directory_uri(); ?>/assets/img/arrow_forward_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+    </li>
+    <!-- 2 -->
+    <li>
+      <a href="" class="card-atuacao bd-sm">
+        <img class="icon" src="<?= get_template_directory_uri(); ?>/assets/img/apartment_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h2>
+          Empresarial
+        </h2>
+        <p>
+          A Jornada Rumo ao Sucesso
+          Empresarial Começa Aqui.
+        </p>
+        <img class="arrow" src="<?= get_template_directory_uri(); ?>/assets/img/arrow_forward_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+    </li>
+    <!-- 3 -->
+    <li>
+      <a href="" class="card-atuacao bd-sm">
+        <img class="icon" src="<?= get_template_directory_uri(); ?>/assets/img/apartment_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h2>
+          Empresarial
+        </h2>
+        <p>
+          A Jornada Rumo ao Sucesso
+          Empresarial Começa Aqui.
+        </p>
+        <img class="arrow" src="<?= get_template_directory_uri(); ?>/assets/img/arrow_forward_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+    </li>
+    <!-- 4 -->
+    <li>
+      <a href="" class="card-atuacao bd-sm">
+        <img class="icon" src="<?= get_template_directory_uri(); ?>/assets/img/apartment_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h2>
+          Empresarial
+        </h2>
+        <p>
+          A Jornada Rumo ao Sucesso
+          Empresarial Começa Aqui.
+        </p>
+        <img class="arrow" src="<?= get_template_directory_uri(); ?>/assets/img/arrow_forward_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+    </li>
+    <!-- 5 -->
+    <li>
+      <a href="" class="card-atuacao bd-sm">
+        <img class="icon" src="<?= get_template_directory_uri(); ?>/assets/img/apartment_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h2>
+          Empresarial
+        </h2>
+        <p>
+          A Jornada Rumo ao Sucesso
+          Empresarial Começa Aqui.
+        </p>
+        <img class="arrow" src="<?= get_template_directory_uri(); ?>/assets/img/arrow_forward_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+    </li>
+    <!-- 6 -->
+    <li>
+      <a href="" class="card-atuacao bd-sm">
+        <img class="icon" src="<?= get_template_directory_uri(); ?>/assets/img/apartment_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h2>
+          Empresarial
+        </h2>
+        <p>
+          A Jornada Rumo ao Sucesso
+          Empresarial Começa Aqui.
+        </p>
+        <img class="arrow" src="<?= get_template_directory_uri(); ?>/assets/img/arrow_forward_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+    </li>
+    <!-- 7 -->
+    <li>
+      <a href="" class="card-atuacao bd-sm">
+        <img class="icon" src="<?= get_template_directory_uri(); ?>/assets/img/apartment_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h2>
+          Empresarial
+        </h2>
+        <p>
+          A Jornada Rumo ao Sucesso
+          Empresarial Começa Aqui.
+        </p>
+        <img class="arrow" src="<?= get_template_directory_uri(); ?>/assets/img/arrow_forward_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+    </li>
+    <!-- 8 -->
+    <li>
+      <a href="" class="card-atuacao bd-sm">
+        <img class="icon" src="<?= get_template_directory_uri(); ?>/assets/img/apartment_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h2>
+          Empresarial
+        </h2>
+        <p>
+          A Jornada Rumo ao Sucesso
+          Empresarial Começa Aqui.
+        </p>
+        <img class="arrow" src="<?= get_template_directory_uri(); ?>/assets/img/arrow_forward_24dp_212421_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      </a>
+    </li>
+  </ul>
+  <a href="" class="btn-pri bd-sm gotham bold">
+    Áreas de Atuação
+  </a>
+</section>
+
+<style>
+  .dados-img {
+    position: relative;
+
+    background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/bg-dados.webp');
+
+    background-size: cover;
+    /* ou outra propriedade de tamanho desejada */
+  }
+</style>
+<div class="secao">
+  <div class="dados-img">
+    <section class="dados secao container">
+      <div class="dados-txt">
+        <h2>
+          20 Anos de Experiência em Diversos Casos.
+        </h2>
+        <p>
+          Com vasta experiência e dedicação, nossa equipe é especializada em resolver os mais diversos casos com eficiência e profissionalismo. Estamos comprometidos em oferecer soluções justas e rápidas para nossos clientes.
+        </p>
+      </div>
+      <ul class="dados-estatisticas">
+        <li class="dado-estatistica">
+          <div class="dado-estatistica-txt">
+            <h3>
+              20 anos
+            </h3>
+            <p>
+              Atuando no mundo jurídico.
+            </p>
+          </div>
+        </li>
+        <li class="dado-estatistica">
+          <div class="dado-estatistica-txt">
+            <h3>
+              20 anos
+            </h3>
+            <p>
+              Atuando no mundo jurídico.
+            </p>
+          </div>
+        </li>
+        <li class="dado-estatistica">
+          <div class="dado-estatistica-txt">
+            <h3>
+              20 anos
+            </h3>
+            <p>
+              Atuando no mundo jurídico.
+            </p>
+          </div>
+        </li>
+        <li class="dado-estatistica">
+          <div class="dado-estatistica-txt">
+            <h3>
+              20 anos
+            </h3>
+            <p>
+              Atuando no mundo jurídico.
+            </p>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+  </div>
+</div>
+
+<section class="time container">
+  <div class="time-txt">
+    <h2>
+      Nossos advogados experientes estão prontos  Para responder a quaisquer perguntas!
+    </h2>
+  </div>
+  <ul class="time-cards grid-3">
+    <li class="time-card">
+      <!-- bg image nesse time card -->
+      <img src="<?= get_template_directory_uri(); ?>/assets/img/time.webp" alt="" srcset="">
+      <div class="time-card-info">
+        <div class="redes-sociais">
+          <a href="" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Instagram Gomes e Meyer Escritorio de Advocacia.svg" alt="">
+          </a>
+          <a href="" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Twitter Gomes e Meyer Escritorio de Advocacia.svg" alt="">
+          </a>
+          <a href="" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Linkedin Escritorio de Advocacia.svg" alt="">
+          </a>
+          <a href="" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Facebook Escritorio de Advocacia.svg" alt="">
+          </a>
+          <a href="" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Whatsapp Escritorio de Advocacia.svg" alt="">
+          </a>
+        </div>
+        <!--  -->
+        <hr>
+        <div class="time-card-info-txt">
+          <h3>
+            Kamily Rinco
+          </h3>
+          <h4>
+            Advogado Civil
+          </h4>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <a href="" class="btn-pri bd-sm gotham bold">
+    Áreas de Atuação
+  </a>
+</section>
 
 <?php get_footer(); ?>

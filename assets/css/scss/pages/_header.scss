@@ -4,7 +4,6 @@
 }
 
 .header-topo {
-
   background-color: #212421;
   padding: 0 1rem;
 
@@ -12,41 +11,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 
-  }
-  .nav-info > *{
-    flex: 1;
-    min-width: fit-content;
-  }
   .nav-info {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 
-
+    > * {
+      flex: 1;
+      min-width: fit-content;
+    }
 
     a {
-      padding: 10px;
-      img{
-        width: 18px;
-      }
-      gap: 10px;
       display: flex;
       flex-direction: row;
-      color: #E6E0E6;
+      align-items: center; /* Adicionado para alinhar os itens centralmente */
+      gap: 10px;
+      padding: 10px;
+      color: #e6e0e6;
       font-size: 10px;
       font-weight: 500;
+
+      img {
+        width: 18px;
+      }
     }
   }
 }
 
 .navbar {
-  padding: 0.5rem 1rem;
-  gap: 8px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  gap: 8px;
 }
 
 .current_page_item a {
@@ -69,47 +69,39 @@ nav ul {
   gap: 40px;
 
   a {
+    position: relative;
     padding: 1rem;
     font-family: "Gotham";
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
-    /* 144.444% */
     letter-spacing: -0.1px;
     color: #212421;
-    position: relative;
-    /* Adicione position relative para o pseudo-elemento funcionar */
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 
     &::after {
       content: " ";
       width: 0;
-      /* Comece com largura 0 para esconder o elemento */
       height: 2px;
       background-color: #212421;
       position: absolute;
       bottom: 8px;
       left: 0;
       transition: width 0.5s ease-in;
-      /* Adicione transição para a largura */
     }
 
     &:hover {
-      color: #0C366A !important;
+      color: #0c366a !important;
 
       &::after {
         width: 100%;
-        /* Aumente a largura para 100% no hover */
       }
     }
   }
 }
 
-
-
-
 header {
-  background-color: #BD9C61;
+  background-color: #bd9c61;
   z-index: 10;
 }
 
@@ -117,7 +109,7 @@ header {
   display: none;
   border: none;
   background: none;
-  border-top: 3px solid #0C233F;
+  border-top: 3px solid #0c233f;
   cursor: pointer;
 
   &::before,
@@ -126,62 +118,55 @@ header {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #0C233F;
+    background-color: #0c233f;
     margin-top: 5px;
   }
 }
-@media(max-width:840px){
+
+@media (max-width: 840px) {
   .header-topo {
     .nav-topo {
       padding: 5px 0;
     }
-    .nav-info {
-      a {
-        padding: inherit;
-      }
+
+    .nav-info a {
+      padding: inherit;
     }
   }
 }
-@media(max-width:1100px) {
+
+@media (max-width: 1100px) {
   .none {
     display: none !important;
   }
 
   .hamburger {
+    display: block;
     background-color: none;
     position: relative;
     z-index: 1000000;
-    display: block;
   }
 
   .menu {
     position: fixed;
     top: 0;
-    z-index: 10;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #BD9C61;
-
+    background-color: #bd9c61;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 0;
-
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-in-out;
     pointer-events: none;
+    z-index: 10;
   }
 
   .navbar.active .menu {
     clip-path: circle(1500px at 90% -15%);
     pointer-events: all;
   }
-
-
-
-
-
-
-
 }

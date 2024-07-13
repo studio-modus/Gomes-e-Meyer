@@ -72,7 +72,7 @@ letter-spacing: -0.1px;
   border-radius: 8px;
 }
 .btn-pri{
-
+text-transform: uppercase !important;
   padding: 12px 20px;
   background-color: #0C233F;
   color: #E6E0E6;
@@ -105,13 +105,14 @@ ul {
 body {
   position: relative;
   background-color: #F4FCFF;
-  font-family: "Cirka", sans-serif ;
+  font-family: "Cirka";
+
 }
 .p-80{
-  padding:0 80px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 .container {
-
   // border: 1px solid red;
   max-width: 1620px;
   margin: 0 auto;

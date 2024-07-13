@@ -81,9 +81,9 @@
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
       gap: 5px;
       flex-wrap: wrap;
+      transform: translateY(-70%);
     }
   .card {
-    margin-top: -70%;
     padding: 40px;
     background-color: #0C233F;
     justify-content: center;
@@ -105,6 +105,8 @@
     flex-direction: column;
     gap: 5px;
     h2{
+    font-family: "Cirka";
+
       font-size: 24px;
 font-style: normal;
 font-weight: 700;
@@ -113,6 +115,8 @@ letter-spacing: -0.1px;
 
     }
     p{
+    font-family: "Cirka";
+
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -126,3 +130,325 @@ letter-spacing: -0.1px;
   }
 
 }
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .cards_hero{
+  .cards {
+      transform: translateY(-50%);
+  }
+}
+}
+
+/* Quando a largura da tela for entre 800px e 1200px (2 colunas) */
+
+
+/* Quando a largura da tela for menor que 800px (1 coluna) */
+@media (max-width: 870px) {
+  .cards_hero{
+  .cards {
+
+      transform: translateY(-40%);
+  }
+}
+}
+
+.sobre{
+
+
+  .left{
+    align-items: start;
+  }
+  .right{
+    align-items: flex-end;
+
+  }
+  .sobre-bloco{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+    span{
+      color:  #BD9C61;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    font-family: "Cirka";
+
+
+    }
+    .end{
+      text-align: end;
+
+    }
+    .start{
+      text-align: start;
+    }
+    h2{
+    font-family: "Cirka";
+
+      color:  #212421;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    hr{
+      height: 3px;
+      width: 40%;
+      background: #BD9C61;
+    }
+
+    p{
+    font-family: "Cirka";
+
+      color: #85754F;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}
+
+
+.areas-atuacao{
+  gap: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  .titulo{
+    font-family: "Cirka";
+
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+      color: #212421;
+      text-align: center;
+      font-size: 69px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.1px;
+      text-transform: capitalize;
+    }
+    hr{
+      background: #212421;
+      height: 4px;
+      width: 100%;
+    }
+  }
+
+
+
+  .cards-atuacao{
+
+  }
+  .card-atuacao{
+    padding: 60px 25px;
+    background-color: #BD9C61;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+
+    h2{
+      color: var(--Preto, #212421);
+font-family: "Gotham";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+    p{
+      color: var(--Preto, #212421);
+font-family: "Gotham";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+    }
+
+    .icon{
+      height: 80px;
+    }
+    .arrow{
+      height: 20px;
+
+    }
+  }
+}
+
+.dados{
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  gap:80px ;
+
+  .dados-txt{
+    display: flex;
+    flex-direction: column;
+    gap:30px ;
+    h2{
+    font-family: "Cirka";
+
+      color: var(--Branco, #E6E0E6);
+      text-align: center;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    p{
+    font-family: "Cirka";
+
+      color: var(--Branco, #E6E0E6);
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  .dados-estatisticas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0; /* Sem espaçamento entre os itens */
+}
+
+.dados-estatisticas > .dado-estatistica {
+    padding: 10px; /* Espaçamento interno dos itens */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    border-right: 1px solid #d9d9d9; /* Borda direita */
+    margin-right: 10px; /* Espaço entre os itens */
+}
+
+.dados-estatisticas > .dado-estatistica:last-child {
+    border-right: none; /* Remove a borda do último item */
+    margin-right: 0; /* Remove o margin do último item */
+}
+
+.dado-estatistica .dado-estatistica-txt {
+  margin-left: 35%;
+    width: 144px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.dado-estatistica h3 {
+    font-family: "Cirka";
+    color: var(--Branco, #E6E0E6);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dado-estatistica p {
+    font-family: "Cirka";
+    color: var(--Branco, #E6E0E6);
+    text-align: center;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 124.8%; /* 26.208px */
+    letter-spacing: 0.63px;
+}
+
+}
+
+
+time
+{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  .time-txt{
+
+    color: var(--Primario, #0C233F);
+text-align: center;
+font-family: "Cirka";
+font-size: 46px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+
+
+  .time-cards{
+
+// ul
+
+    .time-card{
+// li
+      position: relative;
+      height: 594px;
+      border-radius: 8px;
+      img{
+        border-radius: 8px;
+      }
+
+      .time-card-info{
+        transform: translateY(-70%);
+        position: absolute;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px ;
+
+      .redes-sociais{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        > * {
+          flex: 1;
+          min-width: fit-content;
+        }
+      }
+
+
+      hr{
+        background: var(--Secundario, #BD9C61);
+        width: 95px;
+        height: 1px;
+      }
+      &-txt{
+        h3{
+          color: var(--Primario, #0C233F);
+          text-align: center;
+          font-family: "Cirka";
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+
+        }
+        h4{
+          color: var(--Secundario, #BD9C61);
+          text-align: center;
+          font-family: "Gotham";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+        }
+      }
+    }
+    }
+  }
+}
+
