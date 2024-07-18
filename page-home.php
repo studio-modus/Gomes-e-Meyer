@@ -622,42 +622,55 @@ if ($equipe):
           Como podemos ajudá-lo?
         </p>
       </div>
+      <?php
+$contato = get_field('contato');
+if ($contato):
+    ?>
+    
       <div class="contato-info-loc">
         <a href="nav-item" class="gotham">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Telefone Escritorio de Advocacia.svg" alt="">
           <span>
-            (00)0 0000-0000
+          <?php echo $contato['numero']; ?>
           </span>
         </a>
         <a href="" class="gotham">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Email Escritorio de Advocacia.svg" alt="">
           <span>
-            contato@contato.com
+          <?php echo $contato['email']; ?>
           </span>
         </a>
         <a href="" class="gotham">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Localizacao Escritorio de Advocacia.svg" alt="">
           <span>
-            Dr Paschoal Brando, 315 |SP
+          <?php echo $contato['local']; ?>
           </span>
         </a>
       </div>
+      <?php endif; ?>
+
+      <?php
+$social = get_field('social');
+if ($social):
+    ?>
       <div class="redes-sociais">
-        <a href="" class="">
+        <a href="<?php echo $social['insta']; ?>" class="">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Instagram Gomes e Meyer Escritorio de Advocacia.svg" alt="">
         </a>
-        <a href="" class="">
+        <a href="<?php echo $social['x']; ?>" class="">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Twitter Gomes e Meyer Escritorio de Advocacia.svg" alt="">
         </a>
-        <a href="" class="">
+        <a href="<?php echo $social['in']; ?>" class="">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Linkedin Escritorio de Advocacia.svg" alt="">
         </a>
-        <a href="" class="">
+        <a href="<?php echo $social['face']; ?>" class="">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Facebook Escritorio de Advocacia.svg" alt="">
         </a>
-        <a href="" class="">
+        <a href="" class="<?php echo $social['wpp']; ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Whatsapp Escritorio de Advocacia.svg" alt="">
         </a>
+        <?php endif; ?>
+
       </div>
     </div>
     <div class="contato-form">
