@@ -35,7 +35,7 @@ if ($contato):
       </div>
       <?php endif; ?>
 
-   
+   git
       <!--  -->
       <div class="footer-info">
         <h2>
