@@ -35,10 +35,7 @@ if ($contato):
       </div>
       <?php endif; ?>
 
-      <?php
-$social = get_field('social');
-if ($social):
-    ?>
+   
       <!--  -->
       <div class="footer-info">
         <h2>

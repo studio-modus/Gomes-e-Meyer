@@ -649,11 +649,12 @@ if ($contato):
       </div>
       <?php endif; ?>
 
+      <div class="redes-sociais">
+        
       <?php
 $social = get_field('social');
 if ($social):
     ?>
-      <div class="redes-sociais">
         <a href="<?php echo $social['insta']; ?>" class="">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Instagram Gomes e Meyer Escritorio de Advocacia.svg" alt="">
         </a>
@@ -669,10 +670,11 @@ if ($social):
         <a href="" class="<?php echo $social['wpp']; ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Whatsapp Escritorio de Advocacia.svg" alt="">
         </a>
-        <?php endif; ?>
+       
 
       </div>
     </div>
+    <?php endif; ?>
     <div class="contato-form">
 
     </div>
