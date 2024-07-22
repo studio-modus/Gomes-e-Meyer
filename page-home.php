@@ -10,7 +10,7 @@
 <?php get_template_part("/assets/inc/area-destaque");?>
 
 <!-- sobre -->
-<?php get_template_part("/assets/inc/area-destaque");?>
+<?php get_template_part("/assets/inc/sobre");?>
 
 <!-- AREAS DE ATUACAO -->
 <section class="areas-atuacao container p-80">
