@@ -78,6 +78,8 @@
     transform: translateY(-70%);
   }
   .card {
+
+    height: fit-content;
     padding: 40px;
     background-color: #0c233f;
     justify-content: center;
@@ -85,11 +87,17 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-
+    transition: 0.33s ease;
+    &:hover{
+      border-top: 4px solid #85754F;
+      background-color: #0C366A;
+    }
     img {
       width: 80px;
       height: 85px;
     }
+
+
   }
 
   .card-txt {
@@ -194,6 +202,56 @@
   }
 }
 
+.cards-atuacao {
+}
+.card-atuacao {
+  min-width: 370px;
+  box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.25);
+
+  height: fit-content;
+  padding: 60px 25px;
+  background-color: #bd9c61;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+  transition: .54s ease;
+
+  h2 {
+    color: var(--Preto, #212421);
+    font-family: "Gotham";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p {
+    color: var(--Preto, #212421);
+    font-family: "Gotham";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+
+  &:hover{
+    background-color: #0C366A;
+    h2{
+    color: #E6E0E6;
+    }
+    p{
+    color: #E6E0E6;
+    }
+    .icon{
+      display: none;
+    }
+    svg,.icon{
+      fill: #E6E0E6;
+    }
+    }
+  }
 .areas-atuacao {
   gap: 80px;
   display: flex;
@@ -225,42 +283,9 @@
     }
   }
 
-  .cards-atuacao {
   }
-  .card-atuacao {
-    padding: 60px 25px;
-    background-color: #bd9c61;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 25px;
 
-    h2 {
-      color: var(--Preto, #212421);
-      font-family: "Gotham";
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-    }
-    p {
-      color: var(--Preto, #212421);
-      font-family: "Gotham";
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-transform: capitalize;
-    }
 
-    .icon {
-      height: 80px;
-    }
-    .arrow {
-      height: 20px;
-    }
-  }
-}
 
 .dados {
   padding: 80px;
@@ -448,6 +473,7 @@
 
   .comentarios-cards {
     .comentario-card {
+      height: fit-content;
       position: relative;
 
       // li
@@ -494,8 +520,8 @@
             width: 80px;
           height: 80px;
            border-radius: 100%;
+           border: 2px solid #212421;
 
-            filter: drop-shadow(0px 0px 4px rgba(33, 36, 33, 1));
           }
         }
 

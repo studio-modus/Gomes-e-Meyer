@@ -30,10 +30,10 @@
 
 
 }
-.absolute{
 
+.width-100{
+  width: 100%;
 }
-
 
 .btn-sec{
   padding: 9px 20px;
@@ -79,6 +79,7 @@ text-transform: uppercase !important;
   transition: .4s;
   &:hover{
     background-color: #0C366A;
+    padding: 12px 21px;
   }
 }
 // pag 404
