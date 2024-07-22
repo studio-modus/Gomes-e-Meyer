@@ -35,7 +35,6 @@ if ($contato):
       </div>
       <?php endif; ?>
 
-   git
       <!--  -->
       <div class="footer-info">
         <h2>
@@ -52,25 +51,6 @@ if ($contato):
 
         <a href="">
           Blog
-        </a>
-
-      </div>
-      <!--  -->
-      <div class="footer-info">
-        <h2>
-          Jurídico 
-        </h2>
-
-        <a href="">
-          Política de Privacidade
-        </a>
-
-        <a href="">
-          Termos de Serviço
-        </a>
-
-        <a href="">
-          Termos de Uso
         </a>
 
       </div>
