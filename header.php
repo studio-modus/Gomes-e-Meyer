@@ -19,7 +19,7 @@ $theme_uri = get_template_directory_uri();
   <header class="header-topo">
     <nav class="container nav-topo">
       <div class="nav-info">
-        <a href="nav-item" class="gotham">
+        <a href="" class="gotham nav-item">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/Telefone Escritorio de Advocacia.svg" alt="">
             <span>
             (00)0 0000-0000
@@ -61,7 +61,9 @@ $theme_uri = get_template_directory_uri();
   <header class="">
 
     <nav class="navbar container">
+      <a href="">
       <img id="img_logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo-Escritorio-de-Advocacia.png" alt="">
+      </a>
       <button class="hamburger"></button>
 
       <?php wp_nav_menu(); ?>
