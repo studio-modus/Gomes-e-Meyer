@@ -32,7 +32,10 @@
       color: #e6e0e6;
       font-size: 10px;
       font-weight: 500;
-
+      transition: transform 0.43s ease;
+      &:hover{
+        transform: scale(1.1);
+      }
       img {
         width: 18px;
       }
