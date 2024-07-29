@@ -4,7 +4,6 @@ $all_posts = new WP_Query(array(
   'posts_per_page' => -1,
 ));
 
-// Verifica se há posts
 if ($all_posts->have_posts()) {
 ?>
   <ul class="cards-atuacao grid-4">
@@ -20,7 +19,16 @@ if ($all_posts->have_posts()) {
             <path d="M120-120v-560h160v-160h400v320h160v400H520v-160h-80v160H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z" />
           </svg>
           <h2><?php the_title(); ?></h2>
-          <p><?php the_excerpt(); ?></p>
+          <p>
+            <?php
+            $excerpt = get_the_excerpt();
+            if (strlen($excerpt) > 300) {
+              echo mb_strimwidth($excerpt, 0, 150, '...');
+            } else {
+              echo $excerpt;
+            }
+            ?>
+          </p>
           <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#212421">
             <path d="M673-446.67H160v-66.66h513l-240-240L480-800l320 320-320 320-47-46.67 240-240Z" />
           </svg>
@@ -32,7 +40,6 @@ if ($all_posts->have_posts()) {
   </ul>
 
 <?php
-  // Restaurar as configurações originais do postdata
   wp_reset_postdata();
 } else {
   echo '<p>Nenhum post encontrado.</p>';

@@ -64,3 +64,86 @@ function custom_post_type_atuacao()
   ]);
 }
 add_action('init', 'custom_post_type_atuacao');
+
+
+
+//
+
+
+
+function theme_enqueue_scripts()
+{
+  wp_enqueue_script('jquery');
+}
+add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
+
+
+add_action('wp_ajax_search_news', 'search_news');
+add_action('wp_ajax_nopriv_search_news', 'search_news');
+
+function search_news()
+{
+  $post_title = sanitize_text_field($_GET['post_title']);
+  $category = sanitize_text_field($_GET['category']);
+  $date_range = sanitize_text_field($_GET['date_range']);
+  $dates = explode(' to ', $date_range);
+
+  $query_args = array(
+    'post_type' => 'post',
+    'posts_per_page' => -1,
+    's' => $post_title,
+    'cat' => $category,
+  );
+
+  if (!empty($dates[0]) && !empty($dates[1])) {
+    $query_args['date_query'] = array(
+      array(
+        'after' => $dates[0],
+        'before' => $dates[1],
+        'inclusive' => true,
+      ),
+    );
+  }
+
+  $query = new WP_Query($query_args);
+
+  if ($query->have_posts()) {
+    ob_start();
+    while ($query->have_posts()) {
+      $query->the_post();
+?>
+      <li class="noticia">
+        <div class="noticia-img">
+          <a href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail(); ?>
+          </a>
+        </div>
+        <div class="noticia-txt">
+          <div class="noticia-compartilhamento">
+            <h4 class="noticia-categoria">
+              <?php the_category(', '); ?>
+            </h4>
+          </div>
+          <h2 class="noticia-titulo">
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          </h2>
+          <p class="noticia-resumo">
+            <?php the_excerpt(); ?>
+          </p>
+          <h6 class="noticia-data">
+            <?php echo get_the_date(); ?>
+          </h6>
+        </div>
+      </li>
+<?php
+    }
+    $data = ob_get_clean();
+    wp_send_json_success($data);
+  } else {
+    wp_send_json_error();
+  }
+
+  wp_die();
+}
+
+

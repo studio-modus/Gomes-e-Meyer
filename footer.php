@@ -4,7 +4,7 @@
       <img id="img_logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo-Escritorio-de-Advocacia.png" alt="">
     </div>
     <hr>
-    <div class="footer-infos grid-5">
+    <div class="footer-infos grid-3">
     <?php
 $contato = get_field('contato');
 if ($contato):
