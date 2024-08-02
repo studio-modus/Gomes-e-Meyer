@@ -41,6 +41,8 @@ footer {
           line-height: 26px; /* 144.444% */
         }
         a {
+          max-width: 300px;
+
           display: block;
           display: flex;
           flex-direction: row;

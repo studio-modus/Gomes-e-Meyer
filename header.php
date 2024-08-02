@@ -16,65 +16,71 @@ $theme_uri = get_template_directory_uri();
 </head>
 
 <body <?php body_class(); ?>>
-  <header class="header-topo">
-    <nav class="container nav-topo">
-      <div class="nav-info">
-        <a href="" class="gotham nav-item">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Telefone Escritorio de Advocacia.svg" alt="">
+  <?php
+  $home_page_id = get_option('page_on_front');
+  $contato = get_field('contato', $home_page_id);
+  if ($contato) :
+  ?>
+    <header class="header-topo">
+      <nav class="container nav-topo">
+        <div class="nav-info">
+          <a href="" class="gotham nav-item">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Telefone Escritorio de Advocacia.svg" alt="">
             <span>
-            (00)0 0000-0000
+              <?php echo $contato['numero']; ?>
             </span>
-        </a>
-        <a href="" class="gotham">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Email Escritorio de Advocacia.svg" alt="">
+          </a>
+          <a href="" class="gotham">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Email Escritorio de Advocacia.svg" alt="">
             <span>
-            contato@contato.com
+              <?php echo $contato['email']; ?>
             </span>
-        </a>
-        <a href="" class="gotham">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Localizacao Escritorio de Advocacia.svg" alt="">
+          </a>
+          <a href="" class="gotham">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Localizacao Escritorio de Advocacia.svg" alt="">
             <span>
-            Dr Paschoal Brando, 315 |SP
+              <?php echo $contato['local']; ?>
             </span>
-        </a>
-      </div>
-      <div class="nav-info info-2">
-      <a href="" class="">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Instagram Gomes e Meyer Escritorio de Advocacia.svg" alt="">
-        </a>
-        <a href="" class="">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Twitter Gomes e Meyer Escritorio de Advocacia.svg" alt="">
-        </a>
-        <a href="" class="">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Linkedin Escritorio de Advocacia.svg" alt="">
-        </a>
-        <a href="" class="">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Facebook Escritorio de Advocacia.svg" alt="">
-        </a>
-        <a href="" class="">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/Whatsapp Escritorio de Advocacia.svg" alt="">
-        </a>
-      </div>
-    </nav>
-  </header>
+          </a>
+        </div>
+        <div class="nav-info info-2">
+          <a href="<?php echo $social['insta']; ?>" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Instagram Gomes e Meyer Escritorio de Advocacia.svg" alt="">
+          </a>
+          <a href="<?php echo $social['x']; ?>" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Twitter Gomes e Meyer Escritorio de Advocacia.svg" alt="">
+          </a>
+          <a href="<?php echo $social['in']; ?>" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Linkedin Escritorio de Advocacia.svg" alt="">
+          </a>
+          <a href="<?php echo $social['face']; ?>" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Facebook Escritorio de Advocacia.svg" alt="">
+          </a>
+          <a href="<?php echo $social['wpp']; ?>" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Whatsapp Escritorio de Advocacia.svg" alt="">
+          </a>
+        </div>
+      </nav>
+    </header>
 
-  <header class="">
+    <header class="">
 
-    <nav class="navbar container">
-      <a href="">
-      <img id="img_logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo-Escritorio-de-Advocacia.png" alt="">
-      </a>
-      <button class="hamburger"></button>
-
-      <?php wp_nav_menu(); ?>
-
-
-
-      <div class="none">
-        <a href="" class="btn-pri bd-sm gotham bold">
-          ENTRE EM CONTATO
+      <nav class="navbar container">
+        <a href="">
+          <img id="img_logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo-Escritorio-de-Advocacia.png" alt="">
         </a>
-      </div>
-    </nav>
-    </section>
-  </header>
+        <button class="hamburger"></button>
+
+        <?php wp_nav_menu(); ?>
+
+
+
+        <div class="none">
+          <a href="/contato" class="btn-pri bd-sm gotham bold">
+            ENTRE EM CONTATO
+          </a>
+        </div>
+      </nav>
+      </section>
+    </header>
+  <?php endif; ?>

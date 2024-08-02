@@ -147,3 +147,12 @@ function search_news()
 }
 
 
+function custom_trim_excerpt($excerpt)
+{
+  $max_length = 150; // Número máximo de caracteres
+  if (strlen($excerpt) > $max_length) {
+    $excerpt = substr($excerpt, 0, $max_length) . '...';
+  }
+  return $excerpt;
+}
+add_filter('get_the_excerpt', 'custom_trim_excerpt');

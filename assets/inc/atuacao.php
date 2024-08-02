@@ -1,7 +1,7 @@
 <?php
 $all_posts = new WP_Query(array(
   'post_type' => 'atuacao',
-  'posts_per_page' => -1,
+  'posts_per_page' => $posts_per_page,
 ));
 
 if ($all_posts->have_posts()) {
@@ -15,9 +15,15 @@ if ($all_posts->have_posts()) {
     ?>
       <li>
         <a href="<?php echo esc_url($post_link); ?>" class="card-atuacao bd-sm">
-          <svg id="icon" xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 -960 960 960" width="80px" fill="#212421">
-            <path d="M120-120v-560h160v-160h400v320h160v400H520v-160h-80v160H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z" />
-          </svg>
+          <?php
+          if (has_post_thumbnail()) {
+            // Exibe a imagem destacada do post
+            the_post_thumbnail('thumbnail', ['class' => 'thumbnail-class', 'alt' => get_the_title()]);
+          } else {
+            // Caso o post não tenha uma imagem destacada, você pode exibir uma imagem padrão ou outro conteúdo
+            echo '<img src="path/to/default-image.jpg" class="thumbnail-class" alt="Imagem padrão">';
+          }
+          ?>
           <h2><?php the_title(); ?></h2>
           <p>
             <?php

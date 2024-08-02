@@ -12,7 +12,7 @@ if ($equipe) :
       <ul class="time-cards grid-3">
         <li class="time-card">
           <!-- bg image nesse time card -->
-          <img src="<?= get_template_directory_uri(); ?>/assets/img/time.webp" alt="" srcset="">
+          <img src="<?php echo $equipe['img1']; ?>" alt="" srcset="" class="img-equipe">
           <div class="time-card-info bd-sm">
             <div class="redes-sociais">
               <a href=" <?php echo $equipe['link1-1']; ?>" class="">
@@ -55,7 +55,7 @@ if ($equipe) :
         <!-- card 2 -->
         <li class="time-card">
           <!-- bg image nesse time card -->
-          <img src="<?= get_template_directory_uri(); ?>/assets/img/time.webp" alt="" srcset="">
+          <img src="<?php echo $equipe['img2']; ?>" alt="" srcset="" class="img-equipe">
           <div class="time-card-info bd-sm">
             <div class="redes-sociais">
               <a href="<?php echo $equipe['link2-1']; ?>" class="">
@@ -98,7 +98,7 @@ if ($equipe) :
         <!-- card 2 -->
         <li class="time-card">
           <!-- bg image nesse time card -->
-          <img src="<?= get_template_directory_uri(); ?>/assets/img/time.webp" alt="" srcset="">
+          <img src="<?php echo $equipe['img3']; ?>" alt="" srcset="" class="img-equipe">
           <div class="time-card-info bd-sm">
             <div class="redes-sociais">
               <a href="<?php echo $equipe['link3-1']; ?>" class="">
