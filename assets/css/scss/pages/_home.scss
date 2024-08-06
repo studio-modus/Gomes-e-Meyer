@@ -75,7 +75,7 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 5px;
     flex-wrap: wrap;
-    transform: translateY(-70%);
+    transform: translateY(-60%);
   }
   .card {
 
@@ -134,7 +134,7 @@
 @media (max-width: 1599px) {
   .cards_hero {
     .cards {
-      transform: translateY(-40%);
+      transform: translateY(-20%);
     }
   }
 }

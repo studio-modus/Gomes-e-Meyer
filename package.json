@@ -10,7 +10,8 @@
     "@glidejs/glide": "^3.6.0",
     "dotenv": "^16.0.3",
     "glob-parent": "^6.0.2",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-cli": "^3.0.0"
   },
   "devDependencies": {
     "browser-sync": "^3.0.2",
