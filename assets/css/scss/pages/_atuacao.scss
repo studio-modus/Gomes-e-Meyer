@@ -1,23 +1,23 @@
 .txt-principal-sa{
   color: var(--Branco, #E6E0E6);
-text-shadow: 45px -47px 13.2px rgba(0, 0, 0, 0.25);
+text-shadow:   2.8125rem -2.9375rem .825rem rgba(0, 0, 0, 0.25);
 font-family: "Cirka";
 font-size: 7.5rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-letter-spacing: -0.1px;
+letter-spacing: -0.0063rem;
 }
 .hero__sa{
   height: 80%;
-  padding-left: 80px;
+  padding-left: 5rem;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
 
   hr {
-    height: 2px;
+    height: .125rem;
     background-color: #e6e0e6;
-    width: 430px;
+    width: 26.875rem;
   }
 }
 
@@ -36,7 +36,7 @@ letter-spacing: -0.1px;
   }
 
   a {
-    font-size: 1em;
+    font-size: 1rem;
     color: #E6E0E6;
     transition: color 200ms ease;
 
@@ -95,13 +95,13 @@ letter-spacing: -0.1px;
 
   img {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     height: auto;
     object-fit: cover;
   }
 
   ul {
-    padding: 10px 60px;
+    padding: .625rem 3.75rem;
     font-size: 1rem !important;
   }
 

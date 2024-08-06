@@ -226,7 +226,9 @@ align-items: center;
   .grid-4{
     grid-template-columns: repeat(2, 1fr);
   }
-
+.single-post-introducao{
+  width: auto !important;
+}
   // APAGAR
 .dados-estatisticas > .dado-estatistica {
       margin-left: 0%;
@@ -239,6 +241,10 @@ align-items: center;
 
 
 @media screen and (max-width: 995px) {
+  .single-post-img img{
+    height: auto !important;
+    max-width: 100%;
+  }
  .contato-bloco{
   grid-template-columns: 1fr !important;
  }
@@ -325,4 +331,30 @@ align-items: center;
     }
   }
 
+}
+
+
+@media screen and (max-width:520px) {
+
+h1{
+  font-size: 1.625rem !important;
+}
+h2{
+  font-size: 1.375rem !important;
+}
+p, span{
+  font-size: 1.125rem !important;
+}
+h3,h4,h5,h6{
+  font-size: 1.125rem !important;
+
+}
+
+
+}
+
+@media screen and (max-width:910px){
+  .single-post-content{
+    grid-template-columns: 1fr;
+  }
 }

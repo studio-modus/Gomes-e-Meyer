@@ -21,7 +21,8 @@ if ($all_posts->have_posts()) {
             the_post_thumbnail('thumbnail', ['class' => 'thumbnail-class', 'alt' => get_the_title()]);
           } else {
             // Caso o post não tenha uma imagem destacada, você pode exibir uma imagem padrão ou outro conteúdo
-            echo '<img src="path/to/default-image.jpg" class="thumbnail-class" alt="Imagem padrão">';
+            echo '<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#212421"><path d="m374-353 106-78 103 78-43-126 106-76H518l-38-125-38 125H314l104 76-44 126ZM480-81q-140-35-230-162.5T160-523v-238l320-120 320 120v238q0 152-90 279.5T480-81Zm0-62q115-38 187.5-143.5T740-523v-196l-260-98-260 98v196q0 131 72.5 236.5T480-143Zm0-337Z"/></svg>
+';
           }
           ?>
           <h2><?php the_title(); ?></h2>
