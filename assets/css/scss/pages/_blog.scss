@@ -77,12 +77,14 @@ padding-top: 2.5rem;
 
   .noticia{
     .noticia-img .noticia-thumbnail {
+      border-radius: .5rem;
       filter: none; /* Aplica blur e escurece a imagem */
     }
   }
 }
 
 .noticia-compartilhamento{
+  flex-wrap: wrap;
   display: flex;
   gap: .125rem;
   align-items: center;
@@ -104,6 +106,8 @@ line-height: normal;
 }
 
 .noticia-img .noticia-thumbnail:hover {
+  border-radius: .5rem;
+
   filter: none; /* Remove o efeito ao passar o mouse */
 }
 .noticias-listagem{

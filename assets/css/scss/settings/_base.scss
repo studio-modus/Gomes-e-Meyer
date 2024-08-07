@@ -197,6 +197,11 @@ body {
   }
 }
 @media screen and (max-width: 1420px) {
+  .single-post-container{
+    transform: translateY(0) !important;
+  }
+  .single-post-img{
+  }
 .hero__wrap_subpages hr {
   width: 100% !important;
   margin: 0 auto;
@@ -207,6 +212,7 @@ body {
 }
 
 @media screen and (max-width: 1324px) {
+
   .cards_hero .cards{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
 }
@@ -219,6 +225,22 @@ align-items: center;
     grid-template-columns: 1fr;
   }
 
+  .noticia{
+    grid-template-columns: 1fr !important;
+  }
+  .noticia-img{
+    max-width: 100% !important;
+   img{
+    max-width: 100%;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+}
+.noticia-txt {
+  width: 80%;
+  margin: 0 auto;
+}
 
 }
 
@@ -227,6 +249,7 @@ align-items: center;
     grid-template-columns: repeat(2, 1fr);
   }
 .single-post-introducao{
+
   width: auto !important;
 }
   // APAGAR
@@ -241,8 +264,24 @@ align-items: center;
 
 
 @media screen and (max-width: 995px) {
+  .single-post-content{
+    flex-direction: column !important;
+    display: flex !important;
+  }
+  .sec-noticias{
+    transform: translateY(-15%) !important;
+  }
+  .dd-button{
+    padding: .625rem !important;
+    width: 100% !important;
+  }
+  .dd-button:after{
+    display: none !important;
+  }
+  .bloco-pesquisa{
+  }
   .single-post-img img{
-    height: auto !important;
+    height: 100% !important;
     max-width: 100%;
   }
  .contato-bloco{
@@ -380,8 +419,4 @@ span{
 
 }
 
-@media screen and (max-width:910px){
-  .single-post-content{
-    grid-template-columns: 1fr;
-  }
-}
+
