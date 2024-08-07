@@ -250,7 +250,7 @@ align-items: center;
  }
  .contato-info-loc,.contato-info-txt,.redes-sociais{
 
-  width: 300px;
+  display: block;
   justify-content: center;
   align-self: center;
 
@@ -258,8 +258,11 @@ align-items: center;
 }
 
 @media screen and (max-width: 820px) {
+  .time .time-cards .time-card{
+    height: auto !important;
+  }
   .subpage-pg{
-    transform: translateY(-20%) !important;
+    transform: translateY(-15%) !important;
   }
   .comentarios-cards{
     gap: 120px !important;
@@ -272,6 +275,11 @@ align-items: center;
   }
 }
 @media screen and (max-width: 785px) {
+  .hero__wrap_subpages{
+    hr{
+      display: none !important;
+    }
+  }
   .grid-4{
     grid-template-columns: 1fr ;
 }
@@ -279,16 +287,14 @@ align-items: center;
   padding: 10px !important;
 }
 .card-atuacao{
-  width: 300px !important;
   justify-content: center !important;
   align-items: center !important;
   margin: 0 auto;
 }
   .sobre-bloco{
-    width: 90%;
   }
   .sobre .sobre-bloco img{
-    width: 310px;
+    width: 100%;
   }
   .p-80{
     padding-left: 0px;
@@ -297,12 +303,28 @@ align-items: center;
   .cards_hero .cards{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
 }
+.subpage-pg{
+  transform: translateY(-10%) !important;
+}
 }
 @media screen and (max-width:520px) {
+  .contato-bloco{
+    padding: 0 !important;
+  }
+
+  .card-atuacao{
+    min-width: auto !important;
+  padding: 1.25rem .825rem!important;
+
+    width: 99% !important;
+  }
+  .time .time-cards .time-card .time-card-info {
+    width: 100% !important;
+  }
   .card-atuacao{
   }
   .subpage-pg{
-  transform: translateY(-10%) !important;
+  transform: translateY(-30%) !important;
 }
   .container{
     padding-left: 10px !important;
@@ -337,10 +359,10 @@ align-items: center;
 @media screen and (max-width:520px) {
 
 h1{
-  font-size: 1.625rem !important;
+  font-size: 3rem !important;
 }
 h2{
-  font-size: 1.375rem !important;
+  font-size: 2.175rem !important;
 }
 p, span{
   font-size: 1.125rem !important;
@@ -350,6 +372,11 @@ h3,h4,h5,h6{
 
 }
 
+.nav-info{
+span{
+  font-size: 1rem !important;
+}
+}
 
 }
 

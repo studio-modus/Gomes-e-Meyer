@@ -435,12 +435,9 @@
         .redes-sociais {
           display: flex;
           flex-wrap: wrap;
-          gap: 10px;
+          gap: 15px;
 
-          > * {
-            flex: 1;
-            min-width: fit-content;
-          }
+
           svg {
             fill: #212421;
           }
