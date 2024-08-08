@@ -197,9 +197,7 @@ body {
   }
 }
 @media screen and (max-width: 1420px) {
-  .single-post-container{
-    transform: translateY(0) !important;
-  }
+
   .single-post-img{
   }
 .hero__wrap_subpages hr {
@@ -212,6 +210,9 @@ body {
 }
 
 @media screen and (max-width: 1324px) {
+  .hero__sa{
+    grid-template-columns: 1fr !important;
+  }
 
   .cards_hero .cards{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
@@ -280,10 +281,7 @@ align-items: center;
   }
   .bloco-pesquisa{
   }
-  .single-post-img img{
-    height: 100% !important;
-    max-width: 100%;
-  }
+
  .contato-bloco{
   grid-template-columns: 1fr !important;
  }
@@ -347,6 +345,9 @@ align-items: center;
 }
 }
 @media screen and (max-width:520px) {
+  .single-post-introducao-txt{
+    padding: 10px !important;
+  }
   .contato-bloco{
     padding: 0 !important;
   }

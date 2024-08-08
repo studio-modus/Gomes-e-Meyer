@@ -4,7 +4,6 @@
   .hero-single {
     position: relative;
     background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/bg-single-post.png');
-    height: 90vh;
     background-size: cover;
     /* ou outra propriedade de tamanho desejada */
   }
@@ -27,7 +26,6 @@
       </div>
     </div>
 
-    <!--  -->
     <div class="single-post-img">
 
       <?php if (get_the_post_thumbnail_url()) {

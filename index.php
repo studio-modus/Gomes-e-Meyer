@@ -123,7 +123,31 @@
             <input type="checkbox" class="dd-input" id="test">
             <ul class="dd-menu">
               <li>
-              g
+                <form id="search-form">
+                  <div class="form-pitem">
+                    <label for="">Período:</label>
+                    <input type="text" id="date-range" name="date_range" class="underline" placeholder="Selecione a data">
+                  </div>
+                  <div class="form-pitem">
+                    <label for="">Titulo:</label>
+                    <input type="text" name="post_title" class="border" placeholder="Escreva o Título">
+                  </div>
+                  <div class="form-pitem">
+                    <label for="">Categoria:</label>
+                    <select name="category">
+                      <option value="">Todas Categorias</option>
+                      <?php
+                      $categories = get_categories();
+                      foreach ($categories as $category) {
+                        echo '<option value="' . $category->term_id . '">' . $category->name . '</option>';
+                      }
+                      ?>
+                    </select>
+                  </div>
+                  <div class="form-pitem">
+                    <button type="submit">Pesquisar</button>
+                  </div>
+                </form>
 
               </li>
             </ul>
